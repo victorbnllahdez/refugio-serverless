@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f3eb" />
+    <meta
+      name="description"
+      content="Conoce Refugio Senda, un hogar temporal para animales que buscan una familia."
+    />
+    <title>Refugio Senda | Un hogar para cada historia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Refugio Senda, inicio">
+        <span class="brand-mark" aria-hidden="true">s.</span>
+        <span>refugio senda</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a href="#refugio">El refugio</a>
+        <a href="#animales">Animales</a>
+        <a class="nav-cta" href="#contacto">Escríbenos <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=2000&q=85"
+          alt="Un perro espera tranquilo entre la hierba"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Un refugio, muchas segundas oportunidades</p>
+          <h1 id="hero-title">Un hogar empieza<br />con un encuentro.</h1>
+          <p class="hero-copy">Cuidamos, acompañamos y buscamos familias para animales que merecen volver a confiar.</p>
+          <a class="light-link" href="#animales">Conoce a nuestros animales <span aria-hidden="true">↓</span></a>
+        </div>
+        <span class="hero-note">Desde 2014 · En las afueras de Madrid</span>
+      </section>
+
+      <section class="intro section-wrap" id="refugio" aria-labelledby="intro-title">
+        <p class="eyebrow">Aquí comienza algo bueno</p>
+        <div class="intro-content">
+          <h2 id="intro-title">Un lugar seguro<br />hasta llegar a casa.</h2>
+          <p>En Senda, cada animal recibe tiempo, atención veterinaria y cariño sin prisas. Somos un pequeño refugio independiente y creemos que una familia adecuada puede cambiarlo todo.</p>
+        </div>
+      </section>
+
+      <section class="animals" id="animales" aria-labelledby="animals-title">
+        <div class="section-wrap animals-heading">
+          <div>
+            <p class="eyebrow">Compañeros de camino</p>
+            <h2 id="animals-title">Esperando conocerte</h2>
+          </div>
+          <p>Ellos son solo algunas de las historias que hoy buscan un nuevo capítulo.</p>
+        </div>
+        <div class="animal-grid section-wrap">
+          <article class="animal">
+            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=900&q=80" alt="Nube, una perrita blanca de mirada dulce" loading="lazy" />
+            <div class="animal-caption"><h3>Nube</h3><span>3 años · Tranquila</span></div>
+          </article>
+          <article class="animal">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&q=80" alt="Bruno, un perro atento y curioso" loading="lazy" />
+            <div class="animal-caption"><h3>Bruno</h3><span>2 años · Juguetón</span></div>
+          </article>
+          <article class="animal">
+            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=900&q=80" alt="Kira, una gata atigrada descansando" loading="lazy" />
+            <div class="animal-caption"><h3>Kira</h3><span>1 año · Curiosa</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-wrap" id="contacto" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <p class="eyebrow">Seguimos en contacto</p>
+          <h2 id="contact-title">Una nota de Senda,<br />de vez en cuando.</h2>
+          <p>Noticias del refugio, historias bonitas y formas de ayudar.</p>
+        </div>
+        <form class="email-form" id="refugio-form">
+          <label for="name">Tu nombre</label>
+          <input class="text-field" id="name" name="name" type="text" placeholder="¿Cómo te llamas?" autocomplete="name" />
+          <label for="email">Tu correo electrónico</label>
+          <div class="email-row">
+            <input id="email" name="email" type="email" placeholder="hola@ejemplo.com" autocomplete="email" />
+            <button type="submit" aria-label="Enviar solicitud">→</button>
+          </div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">s.</span><span>refugio senda</span></a>
+      <p>Un lugar seguro, una vida nueva.</p>
+      <span>© <span id="year"></span> Refugio Senda</span>
+    </footer>
+
+  </body>
+</html>
